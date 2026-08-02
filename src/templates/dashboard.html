@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block head_title %} Dashboard - {{ block.super }}{% endblock %}
+
+{% block content %}
+    <h1 class="text-3xl font-bold text-red-500">
+        Hello there {{ request.user }}!
+    </h1>
+{% endblock content %}
